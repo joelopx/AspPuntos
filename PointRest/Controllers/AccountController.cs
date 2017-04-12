@@ -26,7 +26,6 @@ namespace PointRest.Controllers
     {
         private const string LocalLoginProvider = "Local";
         private ApplicationUserManager _userManager;
-        private const string TokenUri = "http://localhost:2899/Token";
         public AccountController()
         {
         }
@@ -221,30 +220,6 @@ namespace PointRest.Controllers
             return Ok();
         }
 
-        static HttpClient client = new HttpClient();
-
-        // POST api/Account/Login
-        [AllowAnonymous]
-        [Route("Login")]
-        public async Task<IHttpActionResult> Login(LoginBindingModel model)
-        {
-
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-            var values = new[] {
-                  new KeyValuePair<string,string>("grant_type","password"),
-                  new KeyValuePair<string,string>("username",model.Username),
-                  new KeyValuePair<string,string>("password",model.Password)
-             };
-            HttpResponseMessage loginResponse = await client.PostAsync(TokenUri, new FormUrlEncodedContent(values));
-            //loginResponse.EnsureSuccessStatusCode();
-            if ((loginResponse.IsSuccessStatusCode))
-                return Ok(loginResponse.Content.ReadAsStringAsync().Result);
-
-            return BadRequest(loginResponse.Content.ReadAsStringAsync().Result);
-        }
         // GET api/Account/ExternalLogin
         [OverrideAuthentication]
         [HostAuthentication(DefaultAuthenticationTypes.ExternalCookie)]

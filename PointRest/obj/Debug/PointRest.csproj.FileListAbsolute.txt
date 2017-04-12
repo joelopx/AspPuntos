@@ -192,3 +192,7 @@ C:\ApiRestProjects\PointRest\obj\Debug\PointRest.Migrations.addMigrations.resour
 C:\ApiRestProjects\PointRest\obj\Debug\PointRest.csproj.GenerateResource.Cache
 C:\ApiRestProjects\PointRest\obj\Debug\PointRest.dll
 C:\ApiRestProjects\PointRest\obj\Debug\PointRest.pdb
+C:\ApiRestProjects\PointRest\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\ApiRestProjects\PointRest\bin\Thinktecture.IdentityModel.Core.dll
+C:\ApiRestProjects\PointRest\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\ApiRestProjects\PointRest\bin\Thinktecture.IdentityModel.Core.pdb
