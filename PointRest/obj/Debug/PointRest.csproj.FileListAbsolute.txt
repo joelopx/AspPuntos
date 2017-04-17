@@ -187,7 +187,6 @@ C:\ApiRestProjects\PointRest\bin\Microsoft.Owin.Security.Google.xml
 C:\ApiRestProjects\PointRest\bin\Microsoft.Owin.Security.Twitter.xml
 C:\ApiRestProjects\PointRest\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\ApiRestProjects\PointRest\bin\System.Web.Http.Owin.xml
-C:\ApiRestProjects\PointRest\obj\Debug\PointRest.csprojResolveAssemblyReference.cache
 C:\ApiRestProjects\PointRest\obj\Debug\PointRest.Migrations.addMigrations.resources
 C:\ApiRestProjects\PointRest\obj\Debug\PointRest.csproj.GenerateResource.Cache
 C:\ApiRestProjects\PointRest\obj\Debug\PointRest.dll
@@ -196,3 +195,5 @@ C:\ApiRestProjects\PointRest\bin\System.IdentityModel.Tokens.Jwt.dll
 C:\ApiRestProjects\PointRest\bin\Thinktecture.IdentityModel.Core.dll
 C:\ApiRestProjects\PointRest\bin\System.IdentityModel.Tokens.Jwt.xml
 C:\ApiRestProjects\PointRest\bin\Thinktecture.IdentityModel.Core.pdb
+C:\ApiRestProjects\PointRest\obj\Debug\PointRest.Migrations.addedPointModel.resources
+C:\ApiRestProjects\PointRest\obj\Debug\PointRest.csprojResolveAssemblyReference.cache

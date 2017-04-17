@@ -3,6 +3,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
+using System.Collections;
+using System.Collections.Generic;
+using System.Data.Entity;
 
 namespace PointRest.Models
 {
@@ -16,6 +19,8 @@ namespace PointRest.Models
             // Add custom user claims here
             return userIdentity;
         }
+        public virtual ICollection<Point> Points { get; set; }
+        public int PointsQuantity { get; set; }
     }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
@@ -24,10 +29,12 @@ namespace PointRest.Models
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
-        
+        public virtual DbSet<Point> Points { get; set; }
+
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
         }
+        
     }
 }
